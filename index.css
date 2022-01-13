@@ -19,3 +19,8 @@ body {
     background-position: 0%;
   }
 }
+p {
+  color: black;
+  font-family: Verdana;
+  font-size: 1rem;
+}
