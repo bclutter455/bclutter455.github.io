@@ -1,26 +1,48 @@
+div.topbar {
+  background:rgb(46, 46, 46);
+  height:5em;
+  width:100%;
+  position:fixed ;
+  top:0px;
+}
+
 body {
-  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
-  background-size:  200% 200%;
-  animation: gradient 40s ease infinite;
+  background:rgba(53, 53, 53, 0.918);
+  background-size:  400% 400%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.sidebar{
+  height: 30em;
+  width: .5em;
+  border-radius:.5em;
+  position:flex ;
+  border: 1px outset rgba(0, 0, 0, 1);
+  background: linear-gradient(20deg, rgb(0, 150, 80) 10%, rgb(2, 59, 216) 70% );
+  background-size:  100% 400%;
+  animation: gradient 10s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0%;
-  }
-  50% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 0%;
-  }
+  0% {background-position: 0% 0%;}
+
+  50% {background-position: 0% 100%;}
+
+  100% {background-position: 0% 0%;}
 }
 p {
-  color: black;
-  font-family: Verdana;
-  font-size: 1rem;
+  color: rgb(236, 236, 236);
+  font-family: 'Courier new';
+  font-size: .875em;
+
+}
+
+p.mainpar{
+  padding: 3em;
+
 }
