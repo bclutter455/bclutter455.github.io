@@ -16,7 +16,7 @@ body {
 }
 div.sidebar{
   height: 30em;
-  width: .5em;
+  width: .25em;
   border-radius:.5em;
   position:flex ;
   border: 1px outset rgba(0, 0, 0, 1);
