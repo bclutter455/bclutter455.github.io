@@ -1,5 +1,5 @@
 div.topbar {
-  background:rgb(46, 46, 46);
+  background:rgb(30, 30, 30);
   height:5em;
   width:100%;
   position:fixed ;
@@ -7,7 +7,7 @@ div.topbar {
 }
 
 body {
-  background:rgba(53, 53, 53, 0.918);
+  background:rgb(40, 40, 40);
   background-size:  400% 400%;
   height: 100vh;
   display: flex;
@@ -20,7 +20,7 @@ div.sidebar{
   border-radius:.5em;
   position:flex ;
   border: 1px outset rgba(0, 0, 0, 1);
-  background: linear-gradient(20deg, rgb(0, 150, 80) 10%, rgb(2, 59, 216) 70% );
+  background: linear-gradient(20deg, rgb(0, 82, 41) 10%, rgb(0, 35, 131) 70% );
   background-size:  100% 400%;
   animation: gradient 10s ease infinite;
   display: flex;
