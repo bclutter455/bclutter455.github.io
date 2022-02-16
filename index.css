@@ -1,9 +1,39 @@
 div.topbar {
-  background:rgb(30, 30, 30);
+  background:rgb(167, 167, 28);
   height:4em;
   width:100%;
-  position:fixed ;
+  position:fixed;
   top:0px;
+}
+.header {
+  height:4em;
+  width:100%;
+  margin: auto;
+  margin-bottom: 3em;
+  background:rgb(30, 30, 30);
+  position:fixed;
+  top:0px;
+}
+.filter {
+  display: block;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  margin-right: 1em;
+  text-align: right;
+}
+
+.bar {
+  margin: 0 .1em;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(236, 236, 236);;
+}
+
+a:hover{
+  color: rgb(212, 212, 212);;
+  text-decoration: underline;
 }
 
 body {
@@ -13,6 +43,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(236, 236, 236);
+  font-family: 'Courier new';
+  font-size: .875em;
 }
 div.sidebar{
   height: 30em;
