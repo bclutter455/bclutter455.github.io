@@ -6,7 +6,7 @@ div.topbar {
   top:0px;
 }
 .header {
-  height:4em;
+  height:5em;
   width:100%;
   margin: auto;
   margin-bottom: 3em;
@@ -20,6 +20,9 @@ div.topbar {
   margin-top: 1.5em;
   margin-right: 1em;
   text-align: right;
+  color: rgb(236, 236, 236);
+  font-family: 'Courier new';
+  font-size: 1.25em;
 }
 
 .bar {
