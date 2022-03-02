@@ -1,29 +1,21 @@
-div.topbar {
-  background:rgb(167, 167, 28);
-  height:4em;
-  width:100%;
-  position:fixed;
-  top:0px;
-}
 .header {
   height:5em;
   width:100%;
   margin: auto;
   margin-bottom: 3em;
   background:rgb(30, 30, 30);
-  position:fixed;
+  position:absolute;
   top:0px;
 }
 .filter {
   display: block;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-  margin-right: 1em;
+  max-width: 10.5in;
+  margin:auto;
   text-align: right;
-  color: rgb(236, 236, 236);
-  font-family: 'Courier new';
   font-size: 1.25em;
+  padding: 1.5em 1em;
 }
+
 
 .bar {
   margin: 0 .1em;
@@ -31,11 +23,11 @@ div.topbar {
 
 a{
   text-decoration: none;
-  color: rgb(236, 236, 236);;
+  color: rgb(230, 230, 230);;
 }
 
 a:hover{
-  color: rgb(212, 212, 212);;
+  color: rgb(200, 200, 200);;
   text-decoration: underline;
 }
 
@@ -48,7 +40,7 @@ body {
   align-items: center;
   color: rgb(236, 236, 236);
   font-family: 'Courier new';
-  font-size: .875em;
+  font-size: 1em;
 }
 div.sidebar{
   height: 30em;
@@ -72,13 +64,30 @@ div.sidebar{
   100% {background-position: 0% 0%;}
 }
 p {
-  color: rgb(236, 236, 236);
+  color: rgb(230, 230, 230);
   font-family: 'Courier new';
   font-size: .875em;
 
 }
 
-p.mainpar{
-  padding: 3em;
 
+article {
+  display:grid;
+  grid-template-columns: 1fr .5in [start] 9.5in [end] .5in 1fr ;
+
+  height: 100vh ;
+
+  padding: 5em 0;
 }
+
+article * {grid-column: start / end;}
+
+@media (max-width: 10.5in) {
+    article {grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr ;}
+}
+
+
+.top-img { grid-column: 2/5;}
+.embedded-img {grid-column: 3/4;}
+
+img.top-img, img.embedded-img {width: 100%;}
