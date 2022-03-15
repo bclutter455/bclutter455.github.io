@@ -1,12 +1,11 @@
 body {
-  display: block;
   background:rgb(40, 40, 40);
-  height: 100vh;
   color: rgb(236, 236, 236);
   font-family: 'Courier new';
   font-size: .875em;
   margin:0;
   padding:0;
+  min-height: 100vh;
 }
 
 header {
@@ -14,8 +13,6 @@ header {
   background:rgb(30, 30, 30);
   grid-template-columns: 1fr 0% 1in 9.5in 1in 0% 1fr ;
   height:5em;
-  width:100%
-  hei
 }
 
 .filter {
@@ -38,7 +35,7 @@ a:hover{
 article {
   display:grid;
   grid-template-columns: 1fr .5in [start] 1in 8.5in 1in [end] .5in 1fr ;
-  height: 100vh ;
+  padding-bottom: 15rem;
 }
 article * {grid-column: start / end;}
 
@@ -57,7 +54,7 @@ img.top-img, img.embedded-img,.embedded-img2  {width: 100%;}
   margin: 0 .1em;
 }
 
-div.sidebar{
+/*div.sidebar{
   height: 30em;
   width: .25em;
   border-radius:.5em;
@@ -78,3 +75,4 @@ div.sidebar{
 
   100% {background-position: 0% 0%;}
 }
+*/
