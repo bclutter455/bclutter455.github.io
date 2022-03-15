@@ -1,24 +1,28 @@
-.header {
-  height:5em;
-  width:100%;
-  margin: auto;
-  margin-bottom: 3em;
-  background:rgb(30, 30, 30);
-  position:absolute;
-  top:0px;
-}
-.filter {
+body {
   display: block;
-  max-width: 10.5in;
-  margin:auto;
+  background:rgb(40, 40, 40);
+  height: 100vh;
+  color: rgb(236, 236, 236);
+  font-family: 'Courier new';
+  font-size: .875em;
+  margin:0;
+  padding:0;
+}
+
+header {
+  display:grid;
+  background:rgb(30, 30, 30);
+  grid-template-columns: 1fr 0% 1in 9.5in 1in 0% 1fr ;
+  height:5em;
+  width:100%
+  hei
+}
+
+.filter {
   text-align: right;
   font-size: 1.25em;
-  padding: 1.5em 1em;
-}
-
-
-.bar {
-  margin: 0 .1em;
+  padding: 1.5em 0em;
+  grid-column: 3/6;
 }
 
 a{
@@ -31,17 +35,28 @@ a:hover{
   text-decoration: underline;
 }
 
-body {
-  background:rgb(40, 40, 40);
-  background-size:  400% 400%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(236, 236, 236);
-  font-family: 'Courier new';
-  font-size: 1em;
+article {
+  display:grid;
+  grid-template-columns: 1fr .5in [start] 1in 8.5in 1in [end] .5in 1fr ;
+  height: 100vh ;
 }
+article * {grid-column: start / end;}
+
+@media (max-width: 11.5in) {
+    article {grid-template-columns: 1fr 5% [start] 7.5% 75% 7.5% [end] 5% 1fr ;}
+    header {grid-template-columns: 1fr 2.5% 0% 95% 0% 2.5% 1fr;}
+}
+
+.top-img { grid-column: 2/7;}
+.embedded-img {grid-column: 3/6;}
+.embedded-img2 {grid-column: 4/5;}
+img.top-img, img.embedded-img,.embedded-img2  {width: 100%;}
+
+
+.bar {
+  margin: 0 .1em;
+}
+
 div.sidebar{
   height: 30em;
   width: .25em;
@@ -63,31 +78,3 @@ div.sidebar{
 
   100% {background-position: 0% 0%;}
 }
-p {
-  color: rgb(230, 230, 230);
-  font-family: 'Courier new';
-  font-size: .875em;
-
-}
-
-
-article {
-  display:grid;
-  grid-template-columns: 1fr .5in [start] 9.5in [end] .5in 1fr ;
-
-  height: 100vh ;
-
-  padding: 5em 0;
-}
-
-article * {grid-column: start / end;}
-
-@media (max-width: 10.5in) {
-    article {grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr ;}
-}
-
-
-.top-img { grid-column: 2/5;}
-.embedded-img {grid-column: 3/4;}
-
-img.top-img, img.embedded-img {width: 100%;}
