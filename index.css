@@ -15,11 +15,22 @@ header {
   height:5em;
 }
 
+.topbar{
+  grid-column: 3/6;
+  height:5em;
+}
+.logo {
+  width: 4em;
+  margin: auto;
+  margin-left: .5in;
+}
+
 .filter {
   text-align: right;
   font-size: 1.25em;
   padding: 1.5em 0em;
-  grid-column: 3/6;
+  grid-column: 5/6;
+  margin-top: -4.5em;
 }
 
 a{
@@ -42,6 +53,7 @@ article * {grid-column: start / end;}
 @media (max-width: 11.5in) {
     article {grid-template-columns: 1fr 5% [start] 7.5% 75% 7.5% [end] 5% 1fr ;}
     header {grid-template-columns: 1fr 2.5% 0% 95% 0% 2.5% 1fr;}
+    .logo {margin-left: 2.5%;}
 }
 
 .top-img { grid-column: 2/7;}
