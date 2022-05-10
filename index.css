@@ -1,24 +1,28 @@
 body {
-  background:rgb(40, 40, 40);
+  display: flex;
+  min-height: 100vh;
+  background: rgb(40, 40, 40);
   color: rgb(236, 236, 236);
   font-family: 'Courier new';
-  font-size: 1em;
-  margin:0;
-  padding:0;
-  min-height: 100vh;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 header {
-  display:grid;
-  background:rgb(30, 30, 30);
-  grid-template-columns: 1fr 0% 1in 9.5in 1in 0% 1fr ;
-  height:5em;
+  display: grid;
+  background: rgb(30, 30, 30);
+  grid-template-columns: 1fr 0% 1in 9.5in 1in 0% 1fr;
+  height: 5em;
 }
 
-.topbar{
+.topbar {
   grid-column: 3/6;
-  height:5em;
+  height: 5em;
 }
+
 .logo {
   width: 3.5em;
   margin: auto;
@@ -33,33 +37,71 @@ header {
   margin-top: -4.5em;
 }
 
-a{
+a {
   text-decoration: none;
-  color: rgb(230, 230, 230);;
+  color: rgb(230, 230, 230);
 }
 
-a:hover{
-  color: rgb(200, 200, 200);;
+a:hover {
+  color: rgb(200, 200, 200);
   text-decoration: underline;
 }
 
 article {
-  display:grid;
-  grid-template-columns: 1fr .5in [start] 1in 8.5in 1in [end] .5in 1fr ;
+  display: grid;
+  grid-template-columns: 1fr .5in [start] 1in 8.5in 1in [end] .5in 1fr;
   padding-bottom: 15rem;
 }
-article * {grid-column: start / end;}
 
-@media (max-width: 11.5in) {
-    article {grid-template-columns: 1fr 5% [start] 7.5% 75% 7.5% [end] 5% 1fr ;}
-    header {grid-template-columns: 1fr 2.5% 0% 95% 0% 2.5% 1fr;}
-    .logo {margin-left: 2.5%;}
+article * {
+  grid-column: start / end;
 }
 
-.top-img { grid-column: 2/7;}
-.embedded-img {grid-column: 3/6;}
-.embedded-img2 {grid-column: 4/5;}
-img.top-img, img.embedded-img,.embedded-img2  {width: 100%;}
+footer {
+  background-color: rgb(30, 30, 30);
+  height: 48px;
+  padding: 16px;
+  margin-top: auto;
+}
+
+@media (max-width: 11.5in) {
+  article {
+    grid-template-columns: 1fr 5% [start] 7.5% 75% 7.5% [end] 5% 1fr;
+  }
+
+  header {
+    grid-template-columns: 1fr 2.5% 0% 95% 0% 2.5% 1fr;
+  }
+}
+img.social {
+  height: 2em;
+  margin-top: .5em;
+  filter: invert(75%);
+}
+.social:hover {
+  opacity: 0.6;
+}
+.logo {
+    margin-left: 2.5%;
+}
+
+.top-img {
+  grid-column: 2/7;
+}
+
+.embedded-img {
+  grid-column: 3/6;
+}
+
+.embedded-img2 {
+  grid-column: 4/5;
+}
+
+img.top-img,
+img.embedded-img,
+.embedded-img2 {
+  width: 100%;
+}
 
 
 .bar {
