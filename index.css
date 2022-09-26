@@ -3,8 +3,9 @@ body {
   min-height: 100vh;
   background: rgb(40, 40, 40);
   color: rgb(236, 236, 236);
-  font-family: 'Courier new';
+  font-family: "Courier new";
   font-size: 16px;
+  line-height: 1.25;
   margin: 0;
   padding: 0;
   flex-direction: column;
@@ -25,7 +26,7 @@ header {
 .logo {
   width: 3em;
   margin: auto;
-  margin-left: .5in;
+  margin-left: 0.5in;
   margin-top: 1em;
 }
 
@@ -50,8 +51,8 @@ a:hover {
 
 article {
   display: grid;
-  grid-template-columns: 1fr .5in [start] 1in 8.5in 1in [end] .5in 1fr;
-  padding-bottom: 80px;
+  grid-template-columns: 1fr 0.5in [start] 1in 8.5in 1in [end] 0.5in 1fr;
+  padding-bottom: 60px;
 }
 
 article * {
@@ -60,8 +61,8 @@ article * {
 
 footer {
   background-color: rgb(30, 30, 30);
-  height: 48px;
-  padding: 16px;
+  height: 40px;
+  padding: 12px;
   margin-top: auto;
 }
 
@@ -76,14 +77,14 @@ footer {
 }
 img.social {
   height: 2em;
-  margin-top: .5em;
+  margin-top: 0.5em;
   filter: invert(75%);
 }
 .social:hover {
   opacity: 0.6;
 }
 .logo {
-    margin-left: 1px;
+  margin-left: 1px;
 }
 
 .top-img {
@@ -107,26 +108,37 @@ img.embedded-img,
   width: 100%;
 }
 
-
 .bar {
-  margin: 0 .1em;
+  margin: 0 0.1em;
 }
 
-.colorbar{
+.colorbar {
   height: 1px;
   grid-column: 2/7;
   margin-top: 5px;
   margin-bottom: 5px;
-  background: linear-gradient(to right,rgb(106, 13, 131),rgb(206, 73, 147),rgb(238, 93, 108),rgb(251, 144, 98),rgb(255, 201, 34));
+  background: linear-gradient(
+    to right,
+    rgb(106, 13, 131),
+    rgb(206, 73, 147),
+    rgb(238, 93, 108),
+    rgb(251, 144, 98),
+    rgb(255, 201, 34)
+  );
   animation: gradient 20s ease infinite;
-  background-size:  150% 100%;
-
+  background-size: 150% 100%;
 }
 
 @keyframes gradient {
-  0% {background-position: 0% 0%;}
+  0% {
+    background-position: 0% 0%;
+  }
 
-  50% {background-position: 100% 0%;}
+  50% {
+    background-position: 100% 0%;
+  }
 
-  100% {background-position: 0% 0%;}
+  100% {
+    background-position: 0% 0%;
+  }
 }
