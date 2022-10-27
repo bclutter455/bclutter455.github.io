@@ -30,6 +30,10 @@ header {
   margin-top: 1em;
 }
 
+link {
+  display: none;
+}
+
 .filter {
   text-align: right;
   font-size: 1.25em;
