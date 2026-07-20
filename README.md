@@ -4,4 +4,4 @@ This site is for learning HTML/CSS and to build a place to put other projects to
 ### Why GitHub?
 This site is hosted on GitHub because it gives me a constraint of not have the abilities to do anything other then serve static sites and not get to stuck into the details of frontends/backends of making a website as I’m a mechanical engineering major.
 ### Why not something simpler like use Wordpress or squarespace?
-This was to gives me a opportunity to learn some code and reach outside my comfort zone on the technical side as well. Like learning to write HTML code thats friendly for all devices or how to make a webste friendly for posting content. 
+This was to gives me a opportunity to learn some code and get more context about wedsites and what is going on in background with minial handholding. by making it this way I was able to learn to write HTML code thats friendly for all devices or how to make a webste friendly for posting content. 
